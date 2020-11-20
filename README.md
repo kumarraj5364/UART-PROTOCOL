@@ -160,5 +160,16 @@ inputs that trigger each transition.
  ![Alt](img12.jpg)
 
   Verilog implementation from above diagram. [click here](https://www.edaplayground.com/x/6Mk4)
-  
 
+ ## Oversampling procedure
+ - The most commonly used sampling rate is 16 times
+the baud rate, which means that each serial bit is
+sampled 16 times.
+- Assume that the communication uses N data bits
+and M stop bits. The oversampling scheme works as follows:
+1. Wait until the incoming signal becomes 0, the beginning of the start bit, and then start the sampling tick counter. 
+2.  When the counter reaches 7, the incoming signal reaches the middle point of the start bit. Clear the counter to 0 and restart. 
+3. When the counter reaches 15, the incoming signal progresses for one bit and reaches the middle of the    first data bit. Retrieve its value, shift it into a register, and restart the counter. 
+4.  Repeat step 3 N-1 more times to retrieve the remaining data bits. 
+5.  If the optional parity bit is used, repeat step 3 one time to obtain the parity bit. 
+6.  Repeat step 3 M more times to obtain the stop bits
