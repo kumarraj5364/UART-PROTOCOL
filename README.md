@@ -41,4 +41,4 @@ protocol. Different type of protocols are available.
 - The data cable signal lines are labelled as Rx and Tx.
 -   Serial communication is commonly used for transmitting and receiving the signal.
 
-fig.2  System on chip ![Alt](img2.jpg=60x50)
+fig.2  System on chip     ![Alt](img2.jpg)
