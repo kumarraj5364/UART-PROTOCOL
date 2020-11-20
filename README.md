@@ -50,6 +50,6 @@ protocol. Different type of protocols are available.
 - It uses a single data line for transmitting and receiving the data. It has one start bit, 8-bit data and onestop bit mean the 8-bit data transfer one’s signal is high to low.
 
 #  Application Background
-        ![Alt](img2.jpg)
+ ![Alt](img3.jpg)
 
 UART is one of the most simple and most commonly used Serial Communication techniques. Today, UART is being used in many applications like GPS Receivers, Bluetooth Modules, GSM and GPRS Modems, Wireless Communication Systems, RFID based applications etc.
