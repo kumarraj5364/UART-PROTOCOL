@@ -126,7 +126,7 @@ to transmit it in a serial format
  4) **Tx mux**: It is 4x1 Mux to transmit 4 different type of data viz.start bit, data bit, parity bit and the stop bit.
 
 ## Transmitter  state machine
-  ![Alt](img9.jpg)
+  ![Alt](img10.jpg)
   *finite-state machine (FSM) or finitestate automaton (FSA)*
 - It is an abstract machine that can be in exactly one of a finite
 number of states at any given time. The FSM can change
@@ -140,3 +140,16 @@ inputs that trigger each transition.
 
  Verilog implementation from above diagram.
  [click here](https://www.edaplayground.com/x/4jQu)
+
+
+# Design of UART receiver
+   The receiver, on the other hand, shifts in data bit by bit and then reassembles the data.Likewise, the Receiver must detect transmission, receive the data in serial format, strip of the start and stop bits, and store the data word in a parallel format. 
+
+ ![Alt](img11.jpg)
+
+ This module is further divided into following sub modules:-
+1) **RX fsm**: Generates all the control signals for the UART receiver.
+ 2. **Detect start**: Ideally the receiver receives continuous 1, as soon as the 0 is detected which is done by this module, the reception of data starts. 
+ 3. **SIPO**: Converts serial data into 8 bit parallel data.
+ 4.  **Parity checker**:Checks the correctness of data by Xoring the 10th received bit with xor value of 8 bit received data. 
+ 5. **Stop Bit checker**: After the detection of valid parity bit, the stop bit is detected, if the stop bit is not detected then reception of data is terminated by setting Stop bit error signal high.
