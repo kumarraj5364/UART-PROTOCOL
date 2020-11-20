@@ -72,7 +72,7 @@ The start bit is used to alert the receiver that a word of data is about to sent
 Two UARTs communicate directly with each other.
  - The transmitting UART converts parallel data from a controlling device like a CPU into serial form.
 
-    ![Alt](img5.jpg=50x30)
+    ![Alt](img5.jpg)
 
 - Transmitting it in serial to the receiving UART.
  - Receiver UART then converts the serial data back into parallel data for the receiving device. 
@@ -86,7 +86,7 @@ After detecting the 8 bit data, the receiver then looks for the parity bit which
 -  If the parity bit is detected properly, the receiver looks for the stop bit to stop the reception of data. 
 -  After the successful detection of stop bit the receiver line goes high logic state to indicate idle state and start looking for the next start bit.
 
-![Alt](img6.jpg)
+    ![Alt](img6.jpg)
 
 The UART that is going to transmit data receives the data from a data bus. The data bus is used to send data to the UART by another device like a CPU, memory, or microcontroller. Data is transferred from the data bus to the transmitting UART in parallel form. After the transmitting UART gets the parallel data from the data bus, it adds a start bit, a parity bit, and a stop bit, creating the data packet. Next, the data packet is output serially, bit by bit at the Tx pin.    
 
