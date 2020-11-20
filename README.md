@@ -28,4 +28,5 @@ protocol. Different type of protocols are available.
 2. Peripheral protocol.
 - High speed: PCIe, SATA, SAS, Ethernet, USB, MIPI.
 - Low speed :UART,SPI,I2C.
-An image: ![Alt](img1.jpg)
+
+ ![Alt](img1.jpg)
