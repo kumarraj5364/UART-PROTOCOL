@@ -109,6 +109,18 @@ This project is divided into 3 main modules for the easy and clear understanding
 -  19200
 -  38400
 
-                 ![Alt](img8.jpg)
+     ![Alt](img8.jpg)
 
 # Design of UART transmitter
+
+- UART transmitter controls transmission by fetching a
+data word in parallel format and directing the UART
+to transmit it in a serial format
+
+  ![Alt](img8.jpg)
+
+  - This module is further divided into 4 sub modules:- 
+ 1) **TX Controller fsm**: Generates all the necessary signal required to transmit data at right time 
+ 2) **Parity generator**: Generate parity for the 8 bit input data.
+ 3) **PISO(Parallel In Serial Out)**:Takes the 8 bit input binary data and convert it into 1 bit serial data.
+ 4) **Tx mux**: It is 4x1 Mux to transmit 4 different type of data viz.start bit, data bit, parity bit and the stop bit.
