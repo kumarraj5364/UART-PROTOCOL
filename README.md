@@ -138,4 +138,4 @@ inputs that trigger each transition.
  From the above figure we have to take two STATES for data shifting, given as follows
 **1.present state and 2.next state**.
 
- Verilog implementation from above figure.  ![https://www.edaplayground.com/x/4jQu]()
+ Verilog implementation from above figure.![link](https://www.edaplayground.com/x/4jQu).
