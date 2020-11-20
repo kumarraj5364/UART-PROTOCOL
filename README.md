@@ -41,4 +41,10 @@ protocol. Different type of protocols are available.
 - The data cable signal lines are labelled as Rx and Tx.
 -   Serial communication is commonly used for transmitting and receiving the signal.
 
-fig.2  System on chip     ![Alt](img2.jpg)
+fig.2  System on chip   ![Alt](img2.jpg)
+
+- It is transferred and receives the data serially bit by bit without class pulses. 
+-  The UART takes bytes of data and sends the individual bits in a sequential manner.
+- UART is a half-duplex protocol. 
+- Half-duplex means transferring and receiving the data but not at the same time. 
+- It uses a single data line for transmitting and receiving the data. It has one start bit, 8-bit data and onestop bit mean the 8-bit data transfer one’s signal is high to low.
