@@ -28,7 +28,7 @@ protocol. Different type of protocols are available.
 - High speed: PCIe, SATA, SAS, Ethernet, USB, MIPI.
 - Low speed :UART,SPI,I2C.
 
- Fig. 1. Single wire connection ![Alt](img1.jpg)
+ Fig.1  Single wire connection ![Alt](img1.jpg)
 
 - One of the biggest challenge in SOC design is the on chip communication between the different components.
 -  The different bus protocols used for interconnection .
@@ -40,3 +40,5 @@ protocol. Different type of protocols are available.
 -  UART Protocols is a serial communication with two wired protocols. 
 - The data cable signal lines are labelled as Rx and Tx.
 -   Serial communication is commonly used for transmitting and receiving the signal.
+
+fig.2  System on chip ![Alt](img2.jpg)
