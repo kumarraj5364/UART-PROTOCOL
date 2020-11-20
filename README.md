@@ -26,5 +26,6 @@ Rotocol: A set of rules and regulations is called a
 protocol. Different type of protocols are available.
 1.  Bus protocol: APB,AHB,AXI,ASB,ACE 
 2. Peripheral protocol.
-
-
+- High speed: PCIe, SATA, SAS, Ethernet, USB, MIPI.
+- Low speed :UART,SPI,I2C.
+![image](figure 1.png)
