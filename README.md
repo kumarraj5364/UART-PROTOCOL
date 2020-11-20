@@ -153,3 +153,12 @@ inputs that trigger each transition.
  3. **SIPO**: Converts serial data into 8 bit parallel data.
  4.  **Parity checker**:Checks the correctness of data by Xoring the 10th received bit with xor value of 8 bit received data. 
  5. **Stop Bit checker**: After the detection of valid parity bit, the stop bit is detected, if the stop bit is not detected then reception of data is terminated by setting Stop bit error signal high.
+
+## Receiver state machine
+ From the below fig., we have to take two STATES for data shifting, given as follows **1.present state and 2.next state**.
+
+ ![Alt](img12.jpg)
+
+  Verilog implementation from above diagram. [click here](https://www.edaplayground.com/x/6Mk4)
+  
+
