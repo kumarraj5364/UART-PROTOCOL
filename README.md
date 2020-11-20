@@ -72,7 +72,7 @@ The start bit is used to alert the receiver that a word of data is about to sent
 Two UARTs communicate directly with each other.
  - The transmitting UART converts parallel data from a controlling device like a CPU into serial form.
 
-![Alt](img5.jpg=30x30)
+    ![Alt](img5.jpg=50x30)
 
 - Transmitting it in serial to the receiving UART.
  - Receiver UART then converts the serial data back into parallel data for the receiving device. 
