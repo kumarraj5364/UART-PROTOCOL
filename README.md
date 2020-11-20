@@ -117,10 +117,26 @@ This project is divided into 3 main modules for the easy and clear understanding
 data word in parallel format and directing the UART
 to transmit it in a serial format
 
-  ![Alt](img8.jpg)
+  ![Alt](img9.jpg)
 
   - This module is further divided into 4 sub modules:- 
  1) **TX Controller fsm**: Generates all the necessary signal required to transmit data at right time 
  2) **Parity generator**: Generate parity for the 8 bit input data.
  3) **PISO(Parallel In Serial Out)**:Takes the 8 bit input binary data and convert it into 1 bit serial data.
  4) **Tx mux**: It is 4x1 Mux to transmit 4 different type of data viz.start bit, data bit, parity bit and the stop bit.
+
+## Transmitter  state machine
+  ![Alt](img9.jpg)
+  *finite-state machine (FSM) or finitestate automaton (FSA)*
+- It is an abstract machine that can be in exactly one of a finite
+number of states at any given time. The FSM can change
+from one state to another in response to some inputs; the
+change from one state to another is called a transition. An
+FSM is defined by a list of its states, its initial state, and the
+inputs that trigger each transition.
+
+               From the above figure we have to take two STATES for
+data shifting, given as follows
+**1.present state and 2.next state**.
+
+ Verilog implementation from above figure.   [https://www.edaplayground.com/x/4jQu]
