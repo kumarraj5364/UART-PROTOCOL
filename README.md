@@ -3,7 +3,6 @@
  Advance VLSI Lab  Silicon institute of technology Bhubaneswar,India  
  rajbihar5364@gmail.com
  # Table of Contents
- - [INTRODUCTION ]()
  - [Intrduction]()
   *  [Application Background]()
 - [UART protocol data flow]()
