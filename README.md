@@ -29,7 +29,8 @@ protocol. Different type of protocols are available.
 - High speed: PCIe, SATA, SAS, Ethernet, USB, MIPI.
 - Low speed :UART,SPI,I2C.
 
-   **Single wire connection** ![Alt](img1.jpg)
+    ![Alt](img1.jpg)
+
 
 - One of the biggest challenge in SOC design is the on chip communication between the different components.
 -  The different bus protocols used for interconnection .
@@ -42,7 +43,7 @@ protocol. Different type of protocols are available.
 - The data cable signal lines are labelled as Rx and Tx.
 -   Serial communication is commonly used for transmitting and receiving the signal.
 
- **System on chip**   ![Alt](img2.jpg)
+   ![Alt](img2.jpg)
 
 - It is transferred and receives the data serially bit by bit without class pulses. 
 -  The UART takes bytes of data and sends the individual bits in a sequential manner.
@@ -51,11 +52,15 @@ protocol. Different type of protocols are available.
 - It uses a single data line for transmitting and receiving the data. It has one start bit, 8-bit data and onestop bit mean the 8-bit data transfer one’s signal is high to low.
 
 ## Application Background
+
+
  ![Alt](img3.jpg)
 
 UART is one of the most simple and most commonly used Serial Communication techniques. Today, UART is being used in many applications like GPS Receivers, Bluetooth Modules, GSM and GPRS Modems, Wireless Communication Systems, RFID based applications etc.
 
 # UART protocol data flow
+
+
 ![Alt](img4.jpg)
 
 These special bits are: Start bit, Priority bit, Stop bit.
@@ -89,11 +94,14 @@ After detecting the 8 bit data, the receiver then looks for the parity bit which
 
     ![Alt](img6.jpg)
 
+
 The UART that is going to transmit data receives the data from a data bus. The data bus is used to send data to the UART by another device like a CPU, memory, or microcontroller. Data is transferred from the data bus to the transmitting UART in parallel form. After the transmitting UART gets the parallel data from the data bus, it adds a start bit, a parity bit, and a stop bit, creating the data packet. Next, the data packet is output serially, bit by bit at the Tx pin.    
 
 The receiving UART reads the data packet bit by bit at its Rx pin. The receiving UART then converts the data back into parallel form and removes the start bit, parity bit, and stop bits. Finally, the receiving UART transfers the data packet in parallel to the data bus on the receiving end:
 
 ## Verilog Implementation
+
+
 This project is divided into 3 main modules for the easy and clear understanding and also for the ease in further development of project. **1.Baudrate generator 2. UART transmitter and 3. UART receiver**
 - These 3 module are further divided into sub modules. 
 -  All the modules are connected by instantiating each module in the main module.
@@ -127,7 +135,11 @@ to transmit it in a serial format
  4) **Tx mux**: It is 4x1 Mux to transmit 4 different type of data viz.start bit, data bit, parity bit and the stop bit.
 
 ## Transmitter  state machine
-  ![Alt](img10.jpg)
+
+
+![Alt](img10.jpg)
+
+
   *finite-state machine (FSM) or finitestate automaton (FSA)*
 - It is an abstract machine that can be in exactly one of a finite
 number of states at any given time. The FSM can change
