@@ -193,9 +193,11 @@ UART protocol perfectly fits for communication with low speed device,i.e.This UA
 # Acknowledgement
 
 I would like to thank our institution for equipping us with
-Advanced VLSI Lab facilities to successfully execute our project. I am also grateful to our mentor ,Dr.Saroj Rout (linkedin.com/in/sroutk) for his constant advice and guidance throughout the project duration.
+Advanced VLSI Lab facilities to successfully execute our project. I am also grateful to our mentor ,Dr.Saroj Rout (**linkedin.com/in/sroutk**) for his constant advice and guidance throughout the project duration.
 
 # References
 [1] Semi Design
+
 [2] Electronic Hub
+
 [3] Wikipedia
