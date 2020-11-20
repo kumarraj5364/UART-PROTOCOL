@@ -28,7 +28,7 @@ protocol. Different type of protocols are available.
 - High speed: PCIe, SATA, SAS, Ethernet, USB, MIPI.
 - Low speed :UART,SPI,I2C.
 
- Fig.1  Single wire connection ![Alt](img1.jpg)
+   **Single wire connection** ![Alt](img1.jpg)
 
 - One of the biggest challenge in SOC design is the on chip communication between the different components.
 -  The different bus protocols used for interconnection .
@@ -41,10 +41,15 @@ protocol. Different type of protocols are available.
 - The data cable signal lines are labelled as Rx and Tx.
 -   Serial communication is commonly used for transmitting and receiving the signal.
 
-fig.2  System on chip   ![Alt](img2.jpg)
+ **System on chip**   ![Alt](img2.jpg)
 
 - It is transferred and receives the data serially bit by bit without class pulses. 
 -  The UART takes bytes of data and sends the individual bits in a sequential manner.
 - UART is a half-duplex protocol. 
 - Half-duplex means transferring and receiving the data but not at the same time. 
 - It uses a single data line for transmitting and receiving the data. It has one start bit, 8-bit data and onestop bit mean the 8-bit data transfer one’s signal is high to low.
+
+#  Application Background
+        ![Alt](img2.jpg)
+
+UART is one of the most simple and most commonly used Serial Communication techniques. Today, UART is being used in many applications like GPS Receivers, Bluetooth Modules, GSM and GPRS Modems, Wireless Communication Systems, RFID based applications etc.
