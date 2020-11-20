@@ -19,6 +19,7 @@
 -  [Results]()
 -  [Conclusion]()
 - [Acknowledgement]()
+- [References]()
 
 # Introduction
 Protocol: A set of rules and regulations is called a
@@ -178,10 +179,23 @@ and M stop bits. The oversampling scheme works as follows:
 ## *Output Of Transmitter State machine*
 ![Alt](img13.jpg)
 
-## *. Output Of Receiver State machine*
+## *Output Of Receiver State machine*
 
 ![Alt](img14.jpg)
 
-## *. Final Output Of UART*
+## * Final Output Of UART*
 
 ![Alt](img15.jpg)
+
+# Conclusion
+UART protocol perfectly fits for communication with low speed device,i.e.This UART is a configurable programmable logic component that accommodates communication through a simple asynchronous serial interface. It allows a user to specify the system clock, baud rate, data length, parity scheme, and oversampling rate.
+
+# Acknowledgement
+
+I would like to thank our institution for equipping us with
+Advanced VLSI Lab facilities to successfully execute our project. I am also grateful to our mentor ,Dr.Saroj Rout [linkedin](linkedin.com/in/sroutk) for his constant advice and guidance throughout the project duration.
+
+# References
+[1] Semi Design
+[2] Electronic Hub
+[3] Wikipedia
