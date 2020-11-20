@@ -49,7 +49,7 @@ protocol. Different type of protocols are available.
 - Half-duplex means transferring and receiving the data but not at the same time. 
 - It uses a single data line for transmitting and receiving the data. It has one start bit, 8-bit data and onestop bit mean the 8-bit data transfer one’s signal is high to low.
 
-#  Application Background
+## Application Background
  ![Alt](img3.jpg)
 
 UART is one of the most simple and most commonly used Serial Communication techniques. Today, UART is being used in many applications like GPS Receivers, Bluetooth Modules, GSM and GPRS Modems, Wireless Communication Systems, RFID based applications etc.
@@ -92,7 +92,23 @@ The UART that is going to transmit data receives the data from a data bus. The d
 
 The receiving UART reads the data packet bit by bit at its Rx pin. The receiving UART then converts the data back into parallel form and removes the start bit, parity bit, and stop bits. Finally, the receiving UART transfers the data packet in parallel to the data bus on the receiving end:
 
-# Verilog Implementation
+## Verilog Implementation
 This project is divided into 3 main modules for the easy and clear understanding and also for the ease in further development of project. **1.Baudrate generator 2. UART transmitter and 3. UART receiver**
 - These 3 module are further divided into sub modules. 
 -  All the modules are connected by instantiating each module in the main module.
+## Baud rate generate
+
+![Alt](img7.jpg)
+
+- Baud rate generator determines transmission speed in asynchronous communication. 
+-  It is the number of symbols per second transferred. 
+-  Each bit is 1/(baud rate) wide. 
+-  Baud rate=clock freq./(16 divisor) Some standard baud rate:
+-  2400 
+-  9600 
+-  19200
+-  38400
+
+                 ![Alt](img8.jpg)
+
+# Design of UART transmitter
