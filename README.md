@@ -4,3 +4,20 @@
  rajbihar5364@gmail.com
  # Table of Contents
  - [INTRODUCTION ]()
+ - [Intrduction]()
+  *  [Application Background]()
+- [UART protocol data flow]()
+- [How UART works]()
+   * [Verilog Implementation]()
+   * [Baud rate generate]()
+- [Design of UART transmitter]()
+  * [Transmitter  state machine]()
+  * [Verilog implementation of state machine]()
+- [Design of UART receiver]()
+  * [Receiver state machine]()
+  *  [Verilog implementation of state machine]()
+- [Oversampling procedure]()
+-  [Results]()
+-  [Conclusion]()
+- [Acknowledgement]()
+
