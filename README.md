@@ -88,5 +88,11 @@ After detecting the 8 bit data, the receiver then looks for the parity bit which
 
 ![Alt](img6.jpg)
 
-The UART that is going to transmit data receives the data from a data bus. The data bus is used to send data to the UART by another device like a CPU, memory, or microcontroller. Data is transferred from the data bus to the transmitting UART in parallel form. After the transmitting UART gets the parallel data from the data bus, it adds a start bit, a parity bit, and a stop bit, creating the data packet. Next, the data packet is output serially, bit by bit at the Tx pin.                                                                            
+The UART that is going to transmit data receives the data from a data bus. The data bus is used to send data to the UART by another device like a CPU, memory, or microcontroller. Data is transferred from the data bus to the transmitting UART in parallel form. After the transmitting UART gets the parallel data from the data bus, it adds a start bit, a parity bit, and a stop bit, creating the data packet. Next, the data packet is output serially, bit by bit at the Tx pin.    
+
 The receiving UART reads the data packet bit by bit at its Rx pin. The receiving UART then converts the data back into parallel form and removes the start bit, parity bit, and stop bits. Finally, the receiving UART transfers the data packet in parallel to the data bus on the receiving end:
+
+# Verilog Implementation
+This project is divided into 3 main modules for the easy and clear understanding and also for the ease in further development of project. **1.Baudrate generator 2. UART transmitter and 3. UART receiver**
+- These 3 module are further divided into sub modules. 
+-  All the modules are connected by instantiating each module in the main module.
