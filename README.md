@@ -172,4 +172,16 @@ and M stop bits. The oversampling scheme works as follows:
 3. When the counter reaches 15, the incoming signal progresses for one bit and reaches the middle of the    first data bit. Retrieve its value, shift it into a register, and restart the counter. 
 4.  Repeat step 3 N-1 more times to retrieve the remaining data bits. 
 5.  If the optional parity bit is used, repeat step 3 one time to obtain the parity bit. 
-6.  Repeat step 3 M more times to obtain the stop bits
+6.  Repeat step 3 M more times to obtain the stop bits.
+
+# Results
+## *Output Of Transmitter State machine*
+![Alt](img13.jpg)
+
+## *. Output Of Receiver State machine*
+
+![Alt](img14.jpg)
+
+## *. Final Output Of UART*
+
+![Alt](img15.jpg)
