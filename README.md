@@ -3,7 +3,7 @@
  Advance VLSI Lab  Silicon institute of technology Bhubaneswar,India  
  rajbihar5364@gmail.com
  # Table of Contents
- - [Intrduction]()
+ - [Introduction]()
   *  [Application Background]()
 - [UART protocol data flow]()
 - [How UART works]()
@@ -20,7 +20,7 @@
 -  [Conclusion]()
 - [Acknowledgement]()
 
-# Intrduction
+# Introduction
 Protocol: A set of rules and regulations is called a
 protocol. Different type of protocols are available.
 1.  Bus protocol: APB,AHB,AXI,ASB,ACE 
