@@ -196,7 +196,7 @@ and M stop bits. The oversampling scheme works as follows:
 
 ![Alt](img14.jpg)
 
-## * Final Output Of UART*
+## *Final Output Of UART*
 
 ![Alt](img15.jpg)
 
