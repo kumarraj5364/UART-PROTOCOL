@@ -5,7 +5,7 @@
        rajbihar5364@gmail.com
  # Table of Contents
  - [Introduction](#Introduction)
-  * [Application Background](#Application-Background)
+   * [Application Background](#Application-Background)
 - [UART protocol data flow](#UART-protocol-dataf-low)
 - [How UART works](#How-UART-works)
    * [Verilog Implementation](#Verilog-Implementation)
