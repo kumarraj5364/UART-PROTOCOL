@@ -6,7 +6,7 @@
  # Table of Contents
  - [Introduction](#Introduction)
    * [Application Background](#Application-Background)
-- [UART protocol data flow](#UART-protocol-dataf-low)
+- [UART protocol data flow](#UART-protocol-data-flow)
 - [How UART works](#How-UART-works)
    * [Verilog Implementation](#Verilog-Implementation)
    * [Baud rate generate](#Baud-rate-generate)
