@@ -12,7 +12,7 @@
 - [Design of UART transmitter](#Design-of-UART-transmitter)
   * [Transmitter  state machine](#Transmitter-state-machine)
   * [Verilog implementation of state machine](#Verilog-implementation-of-state-machine)
-- [Design of UART receiver](#Design-of UART-receiver)
+- [Design of UART receiver](#Design-of-UART-receiver)
   * [Receiver state machine](#Receiver-state-machine)
   *  [Verilog implementation of state machine](#Verilog-implementation-of-state-machine)
 - [Oversampling procedure](#Oversampling-procedure)
