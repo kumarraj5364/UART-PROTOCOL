@@ -212,6 +212,6 @@ Advanced VLSI Lab facilities to successfully execute our project. I am also grat
 # References
 [1] Semi Design  [click here](https://l.wl.co/l?u=http%3A%2F%2Fwww.semidesign.in)
 
-[2] Electronic Hub  [click here](https://www.electronicshub.org/)
+[2] Electronic Hub  [click here](https://www.electronicshub.org/basics-uart-communication/)
 
 [3] Wikipedia   [click here](https://www.codrey.com/embedded-systems/uart-serial-communication-rs232/#:~:text=UART%20%28Universal%20Asynchronous%20Transmitter%20Receiver%29%2C%20this%20is%20the,receives%20data%20from%20one%20system%20to%20another%20system.)
