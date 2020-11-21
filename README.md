@@ -196,7 +196,7 @@ and M stop bits. The oversampling scheme works as follows:
 
 ![Alt](img14.jpg)
 
-## * Final Output Of UART*
+## *Final Output Of UART*
 
 ![Alt](img15.jpg)
 
@@ -213,4 +213,8 @@ Advanced VLSI Lab facilities to successfully execute our project. I am also grat
 
 [2] Electronic Hub  [click here](https://www.electronicshub.org/)
 
+<<<<<<< HEAD
 [3] Wikipedia   [click here](https://www.codrey.com/embedded-systems/uart-serial-communication-rs232/#:~:text=UART%20%28Universal%20Asynchronous%20Transmitter%20Receiver%29%2C%20this%20is%20the,receives%20data%20from%20one%20system%20to%20another%20system.)
+=======
+[3] Wikipedia
+>>>>>>> 176d54f3da31dde05084c33a6a115f86d56534c9
