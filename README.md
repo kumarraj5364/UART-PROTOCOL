@@ -65,6 +65,7 @@ UART is one of the most simple and most commonly used Serial Communication techn
 ![Alt](img4.jpg)
 
 These special bits are: Start bit, Priority bit, Stop bit.
+
 **START BIT** :When a word is given to UART for asynchronous transmission, a bit called *“START BIT”* is added to the beginning of each word that is to be transmitted.
 The start bit is used to alert the receiver that a word of data is about to sent, and to force the clock in the receiver into synchronization with the clock in the transmitter.
 
@@ -209,8 +210,8 @@ I would like to thank our institution for equipping us with
 Advanced VLSI Lab facilities to successfully execute our project. I am also grateful to our mentor ,Dr.Saroj Rout (**linkedin.com/in/sroutk**) for his constant advice and guidance throughout the project duration.
 
 # References
-[1] Semi Design
+[1] Semi Design  [click here](https://l.wl.co/l?u=http%3A%2F%2Fwww.semidesign.in)
 
-[2] Electronic Hub
+[2] Electronic Hub  [click here](https://www.electronicshub.org/basics-uart-communication/)
 
-[3] Wikipedia
+[3] Wikipedia   [click here](https://www.codrey.com/embedded-systems/uart-serial-communication-rs232/#:~:text=UART%20%28Universal%20Asynchronous%20Transmitter%20Receiver%29%2C%20this%20is%20the,receives%20data%20from%20one%20system%20to%20another%20system.)
