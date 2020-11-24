@@ -30,7 +30,7 @@ protocol. Different type of protocols are available.
 - High speed: PCIe, SATA, SAS, Ethernet, USB, MIPI.
 - Low speed :UART,SPI,I2C.
 
-    ![Alt](img1.jpg)
+    ![Alt](images/img1.jpg)
 
 
 - One of the biggest challenge in SOC design is the on chip communication between the different components.
@@ -44,7 +44,7 @@ protocol. Different type of protocols are available.
 - The data cable signal lines are labelled as Rx and Tx.
 -   Serial communication is commonly used for transmitting and receiving the signal.
 
-   ![Alt](img2.jpg)
+   ![Alt](images/img2.jpg)
 
 - It is transferred and receives the data serially bit by bit without class pulses. 
 -  The UART takes bytes of data and sends the individual bits in a sequential manner.
@@ -55,14 +55,15 @@ protocol. Different type of protocols are available.
 ## Application Background
 
 
- ![Alt](img3.jpg)
+
+![Alt](images/img3.jpg)
 
 UART is one of the most simple and most commonly used Serial Communication techniques. Today, UART is being used in many applications like GPS Receivers, Bluetooth Modules, GSM and GPRS Modems, Wireless Communication Systems, RFID based applications etc.
 
 # UART protocol data flow
 
 
-![Alt](img4.jpg)
+![Alt](images/img4.jpg)
 
 These special bits are: Start bit, Priority bit, Stop bit.
 
@@ -80,7 +81,7 @@ The start bit is used to alert the receiver that a word of data is about to sent
 Two UARTs communicate directly with each other.
  - The transmitting UART converts parallel data from a controlling device like a CPU into serial form.
 
-    ![Alt](img5.jpg)
+    ![Alt](images/img5.jpg)
 
 - Transmitting it in serial to the receiving UART.
  - Receiver UART then converts the serial data back into parallel data for the receiving device. 
@@ -94,7 +95,7 @@ After detecting the 8 bit data, the receiver then looks for the parity bit which
 -  If the parity bit is detected properly, the receiver looks for the stop bit to stop the reception of data. 
 -  After the successful detection of stop bit the receiver line goes high logic state to indicate idle state and start looking for the next start bit.
 
-    ![Alt](img6.jpg)
+    ![Alt](images/img6.jpg)
 
 
 The UART that is going to transmit data receives the data from a data bus. The data bus is used to send data to the UART by another device like a CPU, memory, or microcontroller. Data is transferred from the data bus to the transmitting UART in parallel form. After the transmitting UART gets the parallel data from the data bus, it adds a start bit, a parity bit, and a stop bit, creating the data packet. Next, the data packet is output serially, bit by bit at the Tx pin.    
@@ -109,7 +110,7 @@ This project is divided into 3 main modules for the easy and clear understanding
 -  All the modules are connected by instantiating each module in the main module.
 ## Baud rate generate
 
-![Alt](img7.jpg)
+![Alt](images/img7.jpg)
 
 - Baud rate generator determines transmission speed in asynchronous communication. 
 -  It is the number of symbols per second transferred. 
@@ -120,7 +121,7 @@ This project is divided into 3 main modules for the easy and clear understanding
 -  19200
 -  38400
 
-     ![Alt](img8.jpg)
+     ![Alt](images/img8.jpg)
 
 # Design of UART transmitter
 
@@ -128,7 +129,7 @@ This project is divided into 3 main modules for the easy and clear understanding
 data word in parallel format and directing the UART
 to transmit it in a serial format
 
-  ![Alt](img9.jpg)
+  ![Alt](images/img9.jpg)
 
   - This module is further divided into 4 sub modules:- 
  1) **TX Controller fsm**: Generates all the necessary signal required to transmit data at right time 
@@ -139,7 +140,7 @@ to transmit it in a serial format
 ## Transmitter  state machine
 
 
-![Alt](img10.jpg)
+![Alt](images/img10.jpg)
 
 
   *finite-state machine (FSM) or finitestate automaton (FSA)*
@@ -160,7 +161,7 @@ inputs that trigger each transition.
 # Design of UART receiver
    The receiver, on the other hand, shifts in data bit by bit and then reassembles the data.Likewise, the Receiver must detect transmission, receive the data in serial format, strip of the start and stop bits, and store the data word in a parallel format. 
 
- ![Alt](img11.jpg)
+![Alt](images/img11.jpg)
 
  This module is further divided into following sub modules:-
 1) **RX fsm**: Generates all the control signals for the UART receiver.
@@ -172,7 +173,7 @@ inputs that trigger each transition.
 ## Receiver state machine
  From the below fig., we have to take two STATES for data shifting, given as follows **1.present state and 2.next state**.
 
- ![Alt](img12.jpg)
+![Alt](images/img12.jpg)
 
   Verilog implementation from above diagram. [click here](https://www.edaplayground.com/x/6Mk4)
 
@@ -191,15 +192,15 @@ and M stop bits. The oversampling scheme works as follows:
 
 # Results
 ## *Output Of Transmitter State machine*
-![Alt](img13.jpg)
+![Alt](images/img13.jpg)
 
 ## *Output Of Receiver State machine*
 
-![Alt](img14.jpg)
+![Alt](images/img14.jpg)
 
 ## *Final Output Of UART*
 
-![Alt](img15.jpg)
+![Alt](images/img15.jpg)
 
 # Conclusion
 UART protocol perfectly fits for communication with low speed device,i.e.This UART is a configurable programmable logic component that accommodates communication through a simple asynchronous serial interface. It allows a user to specify the system clock, baud rate, data length, parity scheme, and oversampling rate.
